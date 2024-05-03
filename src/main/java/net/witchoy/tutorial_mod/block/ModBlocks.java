@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.witchoy.tutorial_mod.TutorialMod;
+import net.witchoy.tutorial_mod.block.custom.Sound_Block;
 import net.witchoy.tutorial_mod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -33,6 +34,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)
                     .strength(2F).requiresCorrectToolForDrops(), UniformInt.of(3,6))); // on va avoir en 3 et 6 experience orbs
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new Sound_Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
     /**
