@@ -13,5 +13,7 @@
   "block.tutorial_mod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.tutorial_mod.sound_block": "Sound Block",
 
+  "tooltip.tutorial_mod.metal_detector.tooltip": "Finds valuables underground!",
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }
