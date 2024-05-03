@@ -1,4 +1,4 @@
-package net.witchoy.tutorial_mod.Items;
+package net.witchoy.tutorial_mod.item;
 
 
 import net.minecraft.world.item.Item;

@@ -12,8 +12,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.witchoy.tutorial_mod.Items.ModCreativeModTabs;
-import net.witchoy.tutorial_mod.Items.ModItems;
+import net.witchoy.tutorial_mod.block.ModBlocks;
+import net.witchoy.tutorial_mod.item.ModCreativeModTabs;
+import net.witchoy.tutorial_mod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -31,6 +32,7 @@ public class TutorialMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
